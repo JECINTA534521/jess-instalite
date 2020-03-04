@@ -29,4 +29,10 @@ class Image(VoteModel,models.Model):
     def __str__(self):
         
         return self.image_name
+
+class Comments(models.Model):
+    comment = models.CharField(max_length=100,blank=True)
+    user = models.ForeignKey(User,on_delete=models.CASCADE)
+    image = models.ForeignKey(Image,on_delete=models.CASCADE)
+    date_posted = models.DateTimeField(auto_now_add=True)
     
