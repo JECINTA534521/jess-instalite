@@ -1,4 +1,4 @@
-from django.db import models
+from django.db import models 
 from django.contrib.auth.models import User
 from tinymce.models import HTMLField
 from vote.models import VoteModel
@@ -52,7 +52,7 @@ class Comments(models.Model):
         return self.comment
 class Profile(models.Model):
     profile_photo = models.ImageField(upload_to='images')
-    bio = HTMLField()
+    bio = models.TextField(max_length=100)
     user = models.OneToOneField(User,on_delete=models.CASCADE,primary_key=True)
     
     
