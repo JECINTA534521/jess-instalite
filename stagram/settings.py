@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'tinymce',
     'vote',
-    'bootstrap4'
+    'bootstrap4',
+    'friendship'
 ]
 
 MIDDLEWARE = [
@@ -81,6 +82,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        
     }
 }
 
