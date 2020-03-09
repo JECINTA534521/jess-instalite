@@ -55,6 +55,8 @@ class Profile(models.Model):
     bio = models.TextField(max_length=100)
     user = models.OneToOneField(User,on_delete=models.CASCADE,primary_key=True)
     
+
+    
     
     def __str__(self):
         
@@ -72,4 +74,5 @@ class Profile(models.Model):
         new_bio_object = cls.objects.get(bio = new_bio)
         new_bio = new_bio_object.bio
         return new_bio
-        
+
+
