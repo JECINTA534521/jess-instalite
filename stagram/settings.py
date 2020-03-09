@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'tinymce',
     'vote',
     'bootstrap4',
-    'friendship'
+    'friendship',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
