@@ -46,7 +46,16 @@ INSTALLED_APPS = [
     'bootstrap4',
     'friendship',
     'crispy_forms',
+    'cloudinary',
+
 ]
+  #add config 
+cloudinary.config(
+  cloud_name = os.environ.get('drlt5hgzy'),
+  api_key = os.environ.get('819123199725491'),
+  api_secret = os.environ.get('***************************'),
+  secure = True
+)
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
