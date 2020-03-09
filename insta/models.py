@@ -2,11 +2,10 @@ from django.db import models
 from django.contrib.auth.models import User
 from tinymce.models import HTMLField
 from vote.models import VoteModel
-from cloudinary.forms import CloudinaryFileField
 
 
 class Image(VoteModel,models.Model):
-    image = models.CloudinaryFileField(upload_to='images/')
+    image = models.ImageField(upload_to='images/')
     image_name = models.CharField(max_length=50)
     image_caption = models.CharField(max_length=50)
     likes = models.PositiveIntegerField(default=0)
