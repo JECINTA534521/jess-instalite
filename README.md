@@ -89,7 +89,7 @@ Boostrap - HTML & CSS
 Material Design - Forms & CSS
  
 ## Database diagram
-<img src="img/instagram-database.png">
+<img src="/img/Instagram-database.png">
 
 
 ## Contact Information.
