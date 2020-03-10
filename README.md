@@ -63,7 +63,7 @@ get_random_string(50, chars)
 and lastly
 
 quit()
-* Copy this result and in your petsygram/petsygram/setting.py file replace
+* Copy this result and in your instagram/stagram/setting.py file replace
 SECRET_KEY = os.environ.get('')
 with
 
