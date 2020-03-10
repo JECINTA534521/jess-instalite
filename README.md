@@ -87,6 +87,10 @@ python manage.py runserver
 Django - Web Framework
 Boostrap - HTML & CSS
 Material Design - Forms & CSS
+ 
+## Database diagram
+<img src="img/instagram-database.png">
+
 
 ## Contact Information.
 Incase of any bug or issue,feel free to contact me at: jecintawanjirug@gmail.com
